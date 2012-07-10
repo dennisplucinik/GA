@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>reveal.js</title>
+		<title>Front-End Web Development @ generalassemb.ly</title>
 
 		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
 		<meta name="author" content="Hakim El Hattab">
@@ -20,6 +20,12 @@
 
 		<link rel="stylesheet" href="/GA/libs/reveal/lib/zenburn.css">
 		<style>
+			.reveal .stripstyles {
+				background: transparent;
+				border: 0;
+				-webkit-box-shadow: 0 0 0;
+			}
+
 			#fixed-ga-logo {
 				height: 100px;
 				width: 100px;
@@ -138,136 +144,192 @@
 				</section>
 
 				<section>
+					<section>
+						<h1>How does the web work?</h1>
+					</section>
+					<section>
+						<h2>Two quick points</h2>
+						<ol>
+							<li>The internet is old.</li>
+							<a href="../../images/timeline.gif">
+								<img src="../../images/timeline.gif" alt="internet timeline" style="height: 400px" />
+							</a>
+							<li>99% of sites contain errors</li>
+						</ol>
+					</section>
+					<section>
+						<h3>browser &rarr; DNS server &rarr; web server</h3>
+						<img src="../../images/dns.gif" alt="DNS server" style="width:50%" />
+						<p>a.k.a. "request / response"</p>
+					</section>
+					<section>
+						<h3>Browser Rendering</h3>
+						<img src="../../images/parsing.png" alt="document parsing" class="stripstyles" />
+					</section>
+				</section>
 
+				<section>
+					<section>
+						<h1>The web development process</h1>
+					</section>
+					<style>
+						.reveal .devcycle div {
+							margin-top: 150px;
+							width: 110%;
+						}
+
+						.reveal .devcycle p {
+							float: left;
+							font-size: .7em;
+							line-height: 1;
+						}
+
+						.reveal .devcycle .arrow {
+							margin: 50px 20px 0;
+							width: 20px;
+						}
+
+						.reveal .devcycle img {
+							display: block;
+							margin: 0 auto 20px auto;
+							max-height: 100px;
+						}
+					</style>
+					<section class="devcycle">
+						<h2>Typical Development Cycle</h2>
+						<div>
+							<p>
+								<img src="../../images/users.png" class="stripstyles" alt="users" />
+								User Experience <br />(UX)
+							</p>
+							<p class="arrow">
+								&rarr;
+							</p>
+							<p>
+								<img src="../../images/workflow.gif" class="stripstyles" alt="workflow" />
+								Information Archtecture<br />(IA)
+							</p>
+							<p class="arrow">
+								&rarr;
+							</p>
+							<p>
+								<img src="../../images/wireframe.png" class="stripstyles" alt="wireframe" />
+								Design
+							</p>
+							<p class="arrow">
+								&rarr;
+							</p>
+							<p>
+								<img src="../../images/html.jpg" class="stripstyles" alt="html" />
+								Development
+							</p>
+						</div>
+					</section>
+					<section>
+						<h3>UX (User Experience)</h3>
+						<img src="../../images/users.png" class="stripstyles" alt="users" />
+						<ul>
+							<li>Who is our target audience?</li>
+							<li>How do we know if the user it hitting their goals?</li>
+							<li>What are the most important features of this site?</li>
+						</ul>
+					</section>
+					<section>
+						<h3>UX (User Experience)</h3>
+						<img src="../../images/venn.png" alt="venn" style="width: 80%" />
+					</section>
+					<section>
+						<h3>IA (Information Architecture)</h3>
+						<h4>A model of blueprint for the site</h4>
+						<img src="../../images/workflow.gif" alt="workflow" />
+						<p>Deliverables include:</p>
+						<p>wireframes, flow diagrams, sitemaps, etc.</p>
+					</section>
+					<section>
+						<h3>IA - The Blueprint</h3>
+						<br />
+						<p style="float: left;width:50%">
+							<span>flow diagram</span><br />
+							<img src="../../images/workflow.gif" alt="establishes flow and order" style="width:80%" />
+						</p>
+						<p style="float: right;width:50%">
+							<span>wireframes</span><br />
+							<img src="../../images/wireframe.jpg" alt="Define the user interaction and ease the handoff process to the creative team" style="width:80%" />
+						</p>
+					</section>
+					<section>
+						<h3>IA - Small Website</h3>
+						<img src="../../images/small-site.jpg" alt="small website" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>IA - Large Website</h3>
+						<img src="../../images/large-site.png" alt="large website" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>IA - Hand drawn</h3>
+						<img src="../../images/handdrawn.jpg" alt="hand drawn" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>IA - Brainstorming</h3>
+						<img src="../../images/brainstorming.jpg" alt="Brainstorming" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>IA - Functional</h3>
+						<img src="../../images/functional.png" alt="Functional" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>IA - Minimal</h3>
+						<img src="../../images/minimal.png" alt="Minimal" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>IA - More detailed</h3>
+						<img src="../../images/moredetailed.png" alt="More detailed" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>IA - iPhone</h3>
+						<img src="../../images/iphone.gif" alt="iPhone" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>Design</h3>
+						<h4>Wireframes become design comps</h4>
+						<img src="../../images/design1.png" alt="Design comps" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>Design</h3>
+						<h4>Each wireframe template, becomes a comp template</h4>
+						<img src="../../images/design2.png" alt="Design templates" style="width: 80%;" />
+					</section>
+					<section>
+						<h3>Development - Comps become graphics &amp; text</h3>
+						<img src="../../images/development.png" alt="Development" style="width: 80%;" />
+					</section>
+					
 				</section>
 
 				<section>
 					<section>
 						<h2>Let's Write Some Code!</h2>
+						<br />
+						<p>
+							Download <a href="http://www.sublimetext.com/2">Sublime Text</a>
+							<br />
+							<a href="http://www.sublimetext.com/2">
+								<img src="../../images/sublimetext.png" class="stripstyles" alt="best text editor ever" >
+							</a>
+						</p>
 					</section>
 					<section>
+						<h3>
+							Checklist
+						</h3>
 						<ul>
-							<li>Goals</li>
-							<li>Grading</li>
+							<li>doctype</li>
+							<li>body</li>
+							<li>HTML tags</li>
+							<li>links</li>
+							<li>file structure</li>
 						</ul>
 					</section>
-				</section>
-
-				<section>
-					<section data-state="xalert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This let's you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#/7/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#/7/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#/7/0" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	alert( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
-				
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code contenteditable>
-var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined || 
-				document.body.style['MozPerspective'] !== undefined ||
-				document.body.style['perspective'] !== undefined;
-
-function linkify( selector ) {
-    if( supports3DTransforms ) {
-        
-        var nodes = document.querySelectorAll( selector );
-
-        for( var i = 0, len = nodes.length; i < len; i++ ) {
-            var node = nodes[i];
-
-            if( !node.className || !node.className.match( /roll/g ) ) {
-                node.className += ' roll';
-                node.innerHTML = '<span data-title="'+ node.text +'">' + node.innerHTML + '</span>';
-            }
-        };
-    }
-}
-
-linkify( 'a' );
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-				
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,<br/>
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Fragmented Views</h2>
-					<p>Hit the next arrow...</p>
-					<p class="fragment">... to step through ...</p>
-					<ol>
-						<li class="fragment"><code>any type</code></li>
-						<li class="fragment"><em>of view</em></li>
-						<li class="fragment"><strong>fragments</strong></li>
-					</ol>
-				</section>
-				
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
-						<img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
-					</a>
-				</section>
-				
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
-						<li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-				
-				<section>
-					<h1>Assignment (due </h1>
-					<h3 class="inverted">BY Hakim El Hattab / hakim.se</h3>
 				</section>
 			</div>
 
