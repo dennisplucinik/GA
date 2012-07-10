@@ -34,6 +34,9 @@
 				left: 25px;
 				opacity: 0;
 			}
+
+			::-moz-selection{ background: #FF0033; color:#fff; text-shadow: none; }
+			::selection { background:#FF0033; color:#fff; text-shadow: none; }
 		</style>
 	</head>
 	
@@ -161,6 +164,42 @@
 						<h3>browser &rarr; DNS server &rarr; web server</h3>
 						<img src="../../images/dns.gif" alt="DNS server" style="width:50%" />
 						<p>a.k.a. "request / response"</p>
+					</section>
+					<section>
+				        <h3>
+				          File Types and Folder Structures
+				        </h3>
+				        <br>
+						<p>
+							When you type in a URL<br>
+						</p>
+						<br>
+				        <ol>
+				        	<li class="fragment">
+								The browser makes a request to the <span style="color:#F03">server</span>
+								<br>
+								<code>
+									http://<span style="background:#F03;color:white">dennisplucinik.github.com</span>/GA
+								</code>
+							</li>
+							<li class="fragment">
+								and requests a specific <span style="color:#F03">file</span>
+								<br>
+								<code>
+									http://dennisplucinik.github.com/GA<span class="fragment">/<span style="background:#F03;color:white">index.html</span></span>
+								</code>
+							</li>
+							<li class="fragment">
+								The server searches it's <span style="color:#F03">internal folders</span> for the <span style="color:#F03">file</span>
+								<br>
+								<code>
+									http://dennisplucinik.github.com<span style="background:#F03;color:white">/GA</span>/<span style="background:#F03;color:white">index.html</span>
+								</code>
+							</li>
+							<li class="fragment">
+								and then sends it back to the browser.
+							</li>
+				        </ol>
 					</section>
 					<section>
 						<h3>Browser Rendering</h3>
