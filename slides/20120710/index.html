@@ -22,7 +22,7 @@
 	</head>
 	
 	<body>
-		
+		<img src="../../images/logo-big.png" alt="General Assembly logo" id="fixed-ga-logo" />
 		<div class="reveal">
 
 			<!-- Used to fade in a background when a specific slide state is reached -->
@@ -30,9 +30,10 @@
 			
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3 class="inverted">CSS 3D Presentations</h3>
+				<section data-state="hidelogo">
+					<h1>Welcome</h1>
+					<h2>to Front-End Web Development</h2>
+					<img src="../../images/logo-big.png" alt="General Assembly logo" style="background: transparent;border:0;-webkit-box-shadow:0 0 0 0;width:25%" />
 					<script>
 						// Delicously hacky. Look away.
 						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
@@ -40,96 +41,110 @@
 				</section>
 				
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is an easy to use, HTML based, presentation tool. You'll need a modern browser with 
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
+					<section data-state="showlogo">
+						<h1>Who are we?</h1>
+						<p>
+							<br />
+							Instructor: <a href="http://www.linkedin.com/in/dennisplucinik">Dennis Plucinik</a>
+							<br /><br />
+							TAs: Phillip Lamplugh &amp; Paul Duey
+						</p>
+					</section>
+					<section>
+						<h3>Checklist</h3>
+						<ul>
+							<li>Student namecards</li>
+							<li>Student introductions</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<style>
+						.reveal .client-server img {
+							background: transparent;
+							border: 0;
+							margin-top: -15px;
+							-webkit-box-shadow: 0 0 0;
+						}
+						.reveal .client-server .left {
+							float: left;
+							margin-left: -8px;
+						}
+						.reveal .client-server .right {
+							float: right;
+						}
+					</style>
+					<section class="client-server">
+						<h1>What is</h1>
+						<h2>Front-End Web Design?</h2>
+						<img src="../../images/client-server-left.png" alt="client server" class="left fragment" />
+						<img src="../../images/client-server-right.png" alt="front-end back-end" class="right fragment" />
+					</section>
 				</section>
 				
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,<br/>
-							try pressing <a href="#/2/1">down</a>.
-						</p>
-						<a href="#/2/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
+						<h2>Syllabus</h2>
+						<a href="http://lore.com/course/10697"><img src="../../images/lore-logo-big.png" style="border:0;background:transparent;-webkit-box-shadow:0 0 0 0;width: 25%" /></a>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+						<h3>Checklist</h3>
+						<ul>
+							<li>Goals</li>
+							<li>Grading</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>My Only Expectation</h1>
+						<br /><br />
+						<h3>ask questions.</h3>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif">
-						</a>
+						<h3>Checklist</h3>
+						<ul>
+							<li>Questions for me?</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Today's Objectives</h2>
+						<ul>
+							<li>How does the web work?</li>
+							<li>The Web-Development Process</li>
+							<li>Text Editors</li>
+							<li>Doctype</li>
+							<li>The &lt;body&gt; element</li>
+							<li>Hyperlinks</li>
+							<li>Separation of Concerns</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Let's Write Some Code!</h2>
 					</section>
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<ul>
+							<li>Goals</li>
+							<li>Grading</li>
+						</ul>
 					</section>
 				</section>
 
 				<section>
-					<h2>Holistic Overview</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview!
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like:
-					</p>
-					<ul>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=linear">Linear</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<section data-state="alert">
+					<section data-state="xalert">
 						<h2>Global State</h2>
 						<p>
 							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
@@ -241,7 +256,7 @@ linkify( 'a' );
 				</section>
 				
 				<section>
-					<h1>THE END</h1>
+					<h1>Assignment (due </h1>
 					<h3 class="inverted">BY Hakim El Hattab / hakim.se</h3>
 				</section>
 			</div>
@@ -262,6 +277,7 @@ linkify( 'a' );
 		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
 		<script src="/GA/reveal.js/lib/highlight.js"></script>
 		<script src="/GA/reveal.js/lib/classList.js"></script>
+		<script src="/GA/reveal.js/lib/zepto.js"></script>
 		
 		<script src="/GA/reveal.js/js/reveal.js"></script>
 		
@@ -273,9 +289,19 @@ linkify( 'a' );
 			} );
 
 			// Fires when a slide with data-state=customevent is activated
-			Reveal.addEventListener( 'customevent', function() {
-				alert( '"customevent" has fired' );
-			} );
+			Reveal.addEventListener('showlogo', function() {
+				//document.getElementById('fixed-ga-logo').setAttribute('style', 'display:block;');
+				$('#fixed-ga-logo').animate({
+					opacity: 1
+				});
+			});
+
+			Reveal.addEventListener('hidelogo', function() {
+				//document.getElementById('fixed-ga-logo').setAttribute('style', 'display:none;');
+				$('#fixed-ga-logo').animate({
+					opacity: 0
+				});
+			});
 
 			// Fires each time a new slide is activated
 			Reveal.addEventListener( 'slidechanged', function( event ) {
