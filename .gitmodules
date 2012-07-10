@@ -1,0 +1,3 @@
+[submodule "libs/reveal"]
+	path = libs/reveal
+	url = git://github.com/dennisplucinik/reveal.js.git
